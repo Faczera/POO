@@ -1,0 +1,79 @@
+package aula3;
+
+public class Produto {
+	
+	
+	int codigo;
+	int Quantidade;
+	String nome;
+	double preco;
+	int estoque;
+	
+	void cadastrar()
+	{
+		
+		if(codigo!= 0)
+			System.out.println("Produto cadastrado");
+		
+		else
+			System.out.println("codigo invalido");
+		
+				}
+	
+	void aprovar()
+	{
+	if(estoque!=0)
+	System.out.println("Produto em estoque");
+	
+	else
+		System.out.println("Estoque zerado, pedido bloqueado");
+	
+	}
+	
+	
+	void bloquear()
+	{
+		if(estoque==0)
+			System.out.println("Pedido bloqueado até a reposição do estoque");
+
+	}
+
+
+	}
+
+}
+
+
+
+
+
+// PROGRAMA RODANDO
+
+package aula3;
+
+public class ProdutoTeste {
+
+	public static void main(String[] args) {
+
+		Produto p1;
+		
+		p1 = new Produto();
+		p1.codigo = 4555;
+		p1.Quantidade = 47;
+		p1.nome = "Caneta";
+		p1.preco = 4.50;
+		p1.estoque = 7;
+		
+		p1.bloquear();
+		p1.cadastrar();
+		p1.aprovar();
+		
+				
+				
+		
+		
+		
+	}
+
+}
+
