@@ -1,0 +1,33 @@
+package aula3;
+
+import java.util.Scanner;
+
+public class Produto {
+	
+		
+		public static void main (String[] args)
+		
+		{
+
+			Scanner input = new Scanner(System.in);
+			
+			
+			System.out.println("Entre com seu nome");
+			String a=input.next();
+			System.out.println("Entre com seu outro nome");
+			String b=input.next();
+			
+			if(a.equals(b))
+			{
+			System.out.println("São iguais");
+			}
+			
+			else
+			{
+				System.out.println("são diferentes");
+			}
+		}
+}
+			
+			
+		
